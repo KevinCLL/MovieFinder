@@ -5,6 +5,10 @@ export default {
       movie: {},
     }
   },
+  transition: {
+    name: 'test',
+    mode: 'out-in',
+  },
   methods: {
     handleUpdate(movie) {
       this.movie = movie
@@ -14,18 +18,18 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <Searchbox @update="handleUpdate" />
+  <transition name="test" mode="out-in">
+    <div class="container">
+      <div>
+        <Searchbox @update="handleUpdate" />
+      </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <style scoped>
 .container {
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

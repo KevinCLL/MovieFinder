@@ -1,5 +1,15 @@
 <template>
-  <img class="logo" src="~/assets/img/logo.png" />
+  <div class="m-5 mb-12">
+    <h1 class="mb-3">
+      <nuxt-link to="/">
+        <img class="logo" src="~/assets/img/logo.png" alt="MovieFinder" />
+      </nuxt-link>
+    </h1>
+    <h2 class="text-xl lg:text-3xl italic">
+      Not <span class="text-red-700">the best movie finder</span>, but it's good
+      enough
+    </h2>
+  </div>
 </template>
 
 <style>
