@@ -12,25 +12,32 @@ export default {
     })
     return { movies: results }
   },
+  data() {
+    return {
+      selectedMovie: {},
+    }
+  },
   methods: {
-    reInit() {
-      this.$nextTick(() => {
-        this.$refs.slick.reSlick()
-      })
+    changeSelectedMovie(movie) {
+      console.log('entra', movie)
+      this.selectedMovie = movie
     },
   },
 }
 </script>
 
 <template>
-  <div class="flex">
-    <div>
-      <Logo />
-      <carousel :per-page="3">
-        <slide v-for="movie in movies.Search" :key="movie.imdbID">
-          <Movie :movie="movie" />
-        </slide>
-      </carousel>
+  <div class="flex flex-col">
+    <carousel :per-page="3">
+      <slide v-for="movie in movies.Search" :key="movie.imdbID">
+        <movie-card
+          :movie="movie"
+          @movie-select="(expandedmovie) => changeSelectedMovie(expandedmovie)"
+        />
+      </slide>
+    </carousel>
+    <div v-if="selectedMovie">
+      <movie-file :movie="selectedMovie" />
     </div>
   </div>
 </template>
