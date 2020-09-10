@@ -27,7 +27,10 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-col">
+  <div v-if="!movies.Search || movies.Search.length < 0" class="flex flex-col">
+    Nothing found
+  </div>
+  <div v-else class="flex flex-col">
     <carousel :per-page="3">
       <slide v-for="movie in movies.Search" :key="movie.imdbID">
         <movie-card

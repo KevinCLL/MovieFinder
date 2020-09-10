@@ -35,8 +35,11 @@ export default {
       >
         <img class="h-100" :src="movie.Poster" :alt="movie.Title" />
       </div>
-      <div v-else class="mb-2 flex items-center h-poster">
-        <p>Poster not found</p>
+      <div
+        v-else
+        class="mb-2 flex items-center h-poster bg-gradient-to-tr from-blue-500 to-indigo-700 flex"
+      >
+        <p class="text-3xl text-white ml-10">Poster not found</p>
       </div>
       <div class="h-5">
         <h2 class="text-2xl">
@@ -47,8 +50,10 @@ export default {
           >
             {{ `by ${expandedMovie.Director}` }}
           </span>
-          <span class="text-xl">{{ ` - ${movie.Year}` }}</span>
         </h2>
+        <h3 class="text-xl">
+          {{ movie.Year }}
+        </h3>
       </div>
       <img
         class="cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"

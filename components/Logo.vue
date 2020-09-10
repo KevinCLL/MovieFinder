@@ -7,7 +7,7 @@
     </h1>
     <h2 class="text-xl lg:text-3xl italic">
       Not <span class="text-red-700">the best movie finder</span>, but it's good
-      enough <span class="text-xs">... I hope</span>
+      enough <span class="text-xs">... maybe</span>
     </h2>
   </div>
 </template>
