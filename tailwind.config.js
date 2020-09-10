@@ -16,6 +16,10 @@ module.exports = {
     width: {
       icon: '50px',
       moviecard: '300px',
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
+      full: '100%',
     },
     height: {
       icon: '50px',

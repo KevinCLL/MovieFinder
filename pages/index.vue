@@ -15,9 +15,7 @@ export default {
 
 <template>
   <div class="container">
-    <div>
-      <Searchbox @update="handleUpdate" />
-    </div>
+    <Searchbox @update="handleUpdate" />
   </div>
 </template>
 
