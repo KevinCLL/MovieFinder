@@ -14,7 +14,7 @@ export default {
     }
   },
   async mounted() {
-    const expandedMovie = await this.$axios.$get('http://www.omdbapi.com/', {
+    const expandedMovie = await this.$axios.$get('https://www.omdbapi.com/', {
       params: {
         apikey: '89fef3ea',
         i: this.movie.imdbID,
