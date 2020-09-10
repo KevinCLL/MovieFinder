@@ -15,7 +15,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   css: [],
-  plugins: [],
+  plugins: [{ src: '~/plugins/resize', ssr: false }],
   components: true,
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module

@@ -17,6 +17,18 @@ export default {
       selectedMovie: null,
     }
   },
+  computed: {
+    screenSize() {
+      return this.$store.state.screenSize
+    },
+    cardsPerPage() {
+      return this.screenSize === 'large'
+        ? 3
+        : this.screenSize === 'medium'
+        ? 2
+        : 1
+    },
+  },
   methods: {
     changeSelectedMovie(movie) {
       this.selectedMovie = movie
@@ -31,7 +43,7 @@ export default {
     Nothing found
   </div>
   <div v-else class="flex flex-col">
-    <carousel :per-page="3">
+    <carousel :per-page="cardsPerPage">
       <slide v-for="movie in movies.Search" :key="movie.imdbID">
         <movie-card
           :movie="movie"

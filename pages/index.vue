@@ -5,10 +5,6 @@ export default {
       movie: {},
     }
   },
-  transition: {
-    name: 'test',
-    mode: 'out-in',
-  },
   methods: {
     handleUpdate(movie) {
       this.movie = movie

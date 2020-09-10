@@ -28,25 +28,26 @@ export default {
 
 <template>
   <div class="flex flex-col items-center w-full p-3 h-full">
-    <div class="border bg-white p-2 h-moviecard relative">
-      <div
-        v-if="movie.Poster !== 'N/A'"
-        class="mb-2 flex items-center h-poster"
-      >
-        <img class="h-100" :src="movie.Poster" :alt="movie.Title" />
+    <div class="border bg-white p-2 h-moviecard w-moviecard relative">
+      <div v-if="movie.Poster !== 'N/A'" class="mb-2 flex h-poster">
+        <img
+          class="h-100 my-0 mx-auto"
+          :src="movie.Poster"
+          :alt="movie.Title"
+        />
       </div>
       <div
         v-else
-        class="mb-2 flex items-center h-poster bg-gradient-to-tr from-blue-500 to-indigo-700 flex"
+        class="mb-2 flex items-center h-poster bg-gradient-to-tr from-gray-400 to-gray-600 flex"
       >
-        <p class="text-3xl text-white ml-10">Poster not found</p>
+        <p class="text-3xl text-white my-0 mx-auto">Poster not found</p>
       </div>
       <div class="h-5">
         <h2 class="text-2xl">
           <span class="bold">{{ `${movie.Title}` }}</span>
           <span
             v-if="expandedMovie && expandedMovie.Director !== 'N/A'"
-            class="italic"
+            class="italic text-xl"
           >
             {{ `by ${expandedMovie.Director}` }}
           </span>
