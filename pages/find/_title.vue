@@ -22,11 +22,11 @@ export default {
       return this.$store.state.screenSize
     },
     cardsPerPage() {
-      return this.screenSize === 'large'
-        ? 3
-        : this.screenSize === 'medium'
-        ? 2
-        : 1
+      if (this.movies.Search.length < 4) return this.movies.Search.length
+      let cards = 1
+      if (this.screenSize === 'large') cards = 3
+      if (this.screenSize === 'medium') cards = 2
+      return cards
     },
   },
   methods: {
@@ -39,7 +39,10 @@ export default {
 </script>
 
 <template>
-  <div v-if="!movies.Search || movies.Search.length < 0" class="flex flex-col">
+  <div
+    v-if="!movies.Search || movies.Search.length === 0"
+    class="flex flex-col"
+  >
     Nothing found
   </div>
   <div v-else class="flex flex-col">

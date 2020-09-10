@@ -1,5 +1,5 @@
 <template>
-  <div class="m-5 mb-12">
+  <div class="m-6 mb-12">
     <h1 class="mb-3">
       <nuxt-link to="/">
         <img class="logo" src="~/assets/img/logo.png" alt="MovieFinder" />

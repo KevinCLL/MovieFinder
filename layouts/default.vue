@@ -1,6 +1,7 @@
 <template>
   <div class="my-5 mx-auto flex flex-col justify-around max-w-screen-lg">
     <Logo />
+    <Searchbox />
     <Nuxt />
   </div>
 </template>

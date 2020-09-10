@@ -5,6 +5,13 @@ export default {
       message: '',
     }
   },
+  computed: {
+    placeholder() {
+      return this.$route.path === '/'
+        ? 'Find me a movie'
+        : 'Find me another movie'
+    },
+  },
   methods: {
     handleClick() {
       this.$router.push({
@@ -16,11 +23,11 @@ export default {
 </script>
 
 <template>
-  <div class="w-full">
+  <div class="w-full mb-6">
     <input
       v-model="message"
       class="shadow border border-red-500 rounded w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-      placeholder="Find me a movie"
+      :placeholder="placeholder"
       @keyup.enter="handleClick"
     />
     <button
