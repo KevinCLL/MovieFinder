@@ -14,13 +14,13 @@ export default {
   },
   data() {
     return {
-      selectedMovie: {},
+      selectedMovie: null,
     }
   },
   methods: {
     changeSelectedMovie(movie) {
-      console.log('entra', movie)
       this.selectedMovie = movie
+      this.$scrollTo('#expanded')
     },
   },
 }
@@ -36,20 +36,10 @@ export default {
         />
       </slide>
     </carousel>
-    <div v-if="selectedMovie">
-      <movie-file :movie="selectedMovie" />
+    <div id="expanded" class="my-10">
+      <movie-file v-if="selectedMovie" :movie="selectedMovie" />
     </div>
   </div>
 </template>
 
-<style scoped>
-.movie-grid {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-gap: 20px;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: 100%;
-  }
-}
-</style>
+<style scoped></style>

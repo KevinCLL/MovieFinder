@@ -2,7 +2,6 @@
   <div class="my-5 mx-auto flex flex-col justify-around max-w-screen-lg">
     <Logo />
     <Nuxt />
-    <div class="halo"></div>
   </div>
 </template>
 
@@ -22,16 +21,6 @@ html {
 body {
   background: url(http://api.thumbr.it/whitenoise-361x370.png?background=15424fff&noise=166f9e&density=100&opacity=61);
   text-align: center;
-}
-
-.halo {
-  background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.6));
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  pointer-events: none;
 }
 
 *,

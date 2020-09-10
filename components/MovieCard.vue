@@ -8,7 +8,9 @@ export default {
   },
   data() {
     return {
-      expandedMovie: {},
+      expandedMovie: null,
+      posterNotFound:
+        'https://i.pinimg.com/originals/c2/d1/e8/c2d1e8ba4e5b23bbad9bf78b695da39a.jpg',
     }
   },
   async mounted() {
@@ -25,33 +27,35 @@ export default {
 </script>
 
 <template>
-  <div
-    class="flex flex-col items-center w-full p-3 h-full"
-    @click="$emit('movie-select', expandedMovie)"
-  >
-    <div class="border bg-white p-2 h-full">
-      <div class="mb-2 flex items-center">
-        <img
-          class="h-100"
-          :src="
-            movie.Poster !== 'N/A'
-              ? movie.Poster
-              : 'https://i.pinimg.com/originals/c2/d1/e8/c2d1e8ba4e5b23bbad9bf78b695da39a.jpg'
-          "
-          :alt="movie.Title"
-        />
+  <div class="flex flex-col items-center w-full p-3 h-full">
+    <div class="border bg-white p-2 h-moviecard relative">
+      <div
+        v-if="movie.Poster !== 'N/A'"
+        class="mb-2 flex items-center h-poster"
+      >
+        <img class="h-100" :src="movie.Poster" :alt="movie.Title" />
       </div>
-      <div>
+      <div v-else class="mb-2 flex items-center h-poster">
+        <p>Poster not found</p>
+      </div>
+      <div class="h-5">
         <h2 class="text-2xl">
           <span class="bold">{{ `${movie.Title}` }}</span>
           <span
-            v-if="expandedMovie.Director && expandedMovie.Director !== 'N/A'"
+            v-if="expandedMovie && expandedMovie.Director !== 'N/A'"
             class="italic"
-            >{{ `by ${expandedMovie.Director}` }}</span
           >
+            {{ `by ${expandedMovie.Director}` }}
+          </span>
           <span class="text-xl">{{ ` - ${movie.Year}` }}</span>
         </h2>
       </div>
+      <img
+        class="cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
+        src="~/assets/img/magnifying_glass_icon.png"
+        alt="magnifying glass"
+        @click="$emit('movie-select', expandedMovie)"
+      />
     </div>
   </div>
 </template>

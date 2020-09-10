@@ -7,7 +7,7 @@
     </h1>
     <h2 class="text-xl lg:text-3xl italic">
       Not <span class="text-red-700">the best movie finder</span>, but it's good
-      enough
+      enough <span class="text-xs">... I hope</span>
     </h2>
   </div>
 </template>
@@ -21,6 +21,12 @@
 @keyframes appear {
   0% {
     opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
   }
 }
 </style>
