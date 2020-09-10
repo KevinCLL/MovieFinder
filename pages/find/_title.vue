@@ -4,7 +4,7 @@ import { Carousel, Slide } from 'vue-carousel'
 export default {
   components: { Carousel, Slide },
   async asyncData({ $axios, params }) {
-    const results = await $axios.$get('http://www.omdbapi.com/', {
+    const results = await $axios.$get('https://www.omdbapi.com/', {
       params: {
         apikey: '89fef3ea',
         s: params.title,

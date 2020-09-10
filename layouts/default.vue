@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background: url(http://api.thumbr.it/whitenoise-361x370.png?background=15424fff&noise=166f9e&density=100&opacity=61);
+  background: url('../assets/img/whitenoise.png');
   text-align: center;
 }
 
