@@ -15,6 +15,7 @@ export default {
   data() {
     return {
       selectedMovie: null,
+      showDetails: false,
     }
   },
   computed: {
@@ -22,18 +23,34 @@ export default {
       return this.$store.state.screenSize
     },
     cardsPerPage() {
-      if (this.movies.Search.length < 4) return this.movies.Search.length
       let cards = 1
-      if (this.screenSize === 'large') cards = 3
-      if (this.screenSize === 'medium') cards = 2
+      const numberOfMovies = this.movies.Search.length
+      if (this.screenSize === 'large')
+        cards = numberOfMovies < 3 ? numberOfMovies : 3
+      if (this.screenSize === 'medium') cards = numberOfMovies < 2 ? 1 : 2
       return cards
     },
   },
   methods: {
     changeSelectedMovie(movie) {
       this.selectedMovie = movie
+      this.showDetails = true
       this.$scrollTo('#expanded')
     },
+    closeDetails() {
+      this.showDetails = false
+    },
+  },
+  head() {
+    return {
+      title: `Movie Finder - ${this.$route.params.title}`,
+      meta: [
+        {
+          hid: 'description',
+          content: "Not the best movie finder, but maybe it's good enough.",
+        },
+      ],
+    }
   },
 }
 </script>
@@ -43,7 +60,9 @@ export default {
     v-if="!movies.Search || movies.Search.length === 0"
     class="flex flex-col"
   >
-    Nothing found
+    <p class="text-xl lg:text-3xl italic">
+      Sorry, but I have not found any movie with that name
+    </p>
   </div>
   <div v-else class="flex flex-col">
     <carousel :per-page="cardsPerPage">
@@ -55,7 +74,19 @@ export default {
       </slide>
     </carousel>
     <div id="expanded" class="my-10">
-      <movie-file v-if="selectedMovie" :movie="selectedMovie" />
+      <movie-file
+        v-if="selectedMovie && showDetails"
+        :movie="selectedMovie"
+        @close="closeDetails"
+      />
+    </div>
+    <div class="text-center w-full">
+      <div
+        class="inline cursor-pointer h-icon w-icon text-3xl text-white"
+        @click="$scrollTo('html')"
+      >
+        ↑
+      </div>
     </div>
   </div>
 </template>

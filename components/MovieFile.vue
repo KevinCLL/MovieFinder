@@ -10,6 +10,24 @@ export default {
     screenSize() {
       return this.$store.state.windowWidth
     },
+    movieInfo() {
+      const infoWantedAndSorted = [
+        ['Title', this.movie.Title],
+        ['Released', this.movie.Released],
+        ['Director', this.movie.Director],
+        ['Production', this.movie.Production],
+        ['Writer', this.movie.Writer],
+        ['Actors', this.movie.Actors],
+        ['Country', this.movie.Country],
+        ['Language', this.movie.Language],
+        ['Genre', this.movie.Genre],
+        ['Rated', this.movie.Rated],
+        ['Awards', this.movie.Awards],
+        ['BoxOffice', this.movie.BoxOffice],
+        ['Plot', this.movie.Plot],
+      ]
+      return infoWantedAndSorted.filter((item) => this.itemExists(item[1]))
+    },
   },
   methods: {
     itemExists(item) {
@@ -21,36 +39,20 @@ export default {
 
 <template>
   <div
-    class="flex w-full p-8 bg-gray-200"
+    class="flex w-full p-10 bg-gray-200 relative"
     :class="{ 'flex-col-reverse': screenSize < 737 }"
   >
+    <div
+      class="cursor-pointer h-icon w-icon absolute right-0 top-0 mt-1 text-xl"
+      @click="$emit('close')"
+    >
+      ✖
+    </div>
     <dl>
-      <dt>Title:</dt>
-      <dd>{{ movie.Title }}</dd>
-      <dt v-if="itemExists(movie.Released)">Released:</dt>
-      <dd v-if="itemExists(movie.Released)">{{ movie.Released }}</dd>
-      <dt v-if="itemExists(movie.Director)">Director:</dt>
-      <dd v-if="itemExists(movie.Director)">{{ movie.Director }}</dd>
-      <dt v-if="itemExists(movie.Production)">Production:</dt>
-      <dd v-if="itemExists(movie.Production)">{{ movie.Production }}</dd>
-      <dt v-if="itemExists(movie.Writer)">Writer:</dt>
-      <dd v-if="itemExists(movie.Writer)">{{ movie.Writer }}</dd>
-      <dt v-if="itemExists(movie.Actors)">Actors:</dt>
-      <dd v-if="itemExists(movie.Actors)">{{ movie.Actors }}</dd>
-      <dt v-if="itemExists(movie.Country)">Country:</dt>
-      <dd v-if="itemExists(movie.Country)">{{ movie.Country }}</dd>
-      <dt v-if="itemExists(movie.Language)">Language:</dt>
-      <dd v-if="itemExists(movie.Language)">{{ movie.Language }}</dd>
-      <dt v-if="itemExists(movie.Genre)">Genre:</dt>
-      <dd v-if="itemExists(movie.Genre)">{{ movie.Genre }}</dd>
-      <dt v-if="itemExists(movie.Rated)">Rated:</dt>
-      <dd v-if="itemExists(movie.Rated)">{{ movie.Rated }}</dd>
-      <dt v-if="itemExists(movie.Awards)">Awards:</dt>
-      <dd v-if="itemExists(movie.Awards)">{{ movie.Awards }}</dd>
-      <dt v-if="itemExists(movie.BoxOffice)">BoxOffice:</dt>
-      <dd v-if="itemExists(movie.BoxOffice)">{{ movie.BoxOffice }}</dd>
-      <dt v-if="itemExists(movie.Plot)">Plot:</dt>
-      <dd v-if="itemExists(movie.Plot)">{{ movie.Plot }}</dd>
+      <template v-for="item in movieInfo">
+        <dt :key="`${item[0]}-t`">{{ item[0] }}:</dt>
+        <dd :key="`${item[0]}-d`">{{ item[1] }}</dd>
+      </template>
     </dl>
     <div class="flex flex-col min-w-1/4">
       <div v-if="itemExists(movie.Poster)" class="my-0 mx-auto">
