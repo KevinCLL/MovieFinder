@@ -9,19 +9,27 @@ export default {
   data() {
     return {
       expandedMovie: null,
-      posterNotFound:
-        'https://i.pinimg.com/originals/c2/d1/e8/c2d1e8ba4e5b23bbad9bf78b695da39a.jpg',
     }
   },
-  async mounted() {
-    const expandedMovie = await this.$axios.$get('https://www.omdbapi.com/', {
-      params: {
-        apikey: '89fef3ea',
-        i: this.movie.imdbID,
-        plot: 'full',
-      },
-    })
-    this.expandedMovie = expandedMovie
+  mounted() {
+    this.init()
+  },
+  methods: {
+    init() {
+      this.$axios
+        .$get('https://www.omdbapi.com/', {
+          params: {
+            apikey: '89fef3ea',
+            i: this.movie.imdbID,
+            plot: 'full',
+          },
+        })
+        .then((expandedMovie) => (this.expandedMovie = expandedMovie))
+        .catch((error) => {
+          // eslint-disable-next-line no-console
+          console.error(error)
+        })
+    },
   },
 }
 </script>
@@ -38,13 +46,13 @@ export default {
       </div>
       <div
         v-else
-        class="mb-2 flex items-center h-poster bg-gradient-to-tr from-gray-400 to-gray-600 flex"
+        class="mb-2 flex items-center h-poster bg-gradient-to-tr from-blue-700 to-blue-900 flex"
       >
         <p class="text-3xl text-white my-0 mx-auto">Poster not found</p>
       </div>
-      <div class="h-5">
-        <h2 class="text-2xl">
-          <span class="bold">{{ `${movie.Title}` }}</span>
+      <div class="h-5 text-center">
+        <h2>
+          <span class="text-2xl">{{ `${movie.Title}` }}</span>
           <span
             v-if="expandedMovie && expandedMovie.Director !== 'N/A'"
             class="italic text-xl"
@@ -65,5 +73,3 @@ export default {
     </div>
   </div>
 </template>
-
-<style scoped></style>

@@ -4,12 +4,17 @@ import { Carousel, Slide } from 'vue-carousel'
 export default {
   components: { Carousel, Slide },
   async asyncData({ $axios, params }) {
-    const results = await $axios.$get('https://www.omdbapi.com/', {
-      params: {
-        apikey: '89fef3ea',
-        s: params.title,
-      },
-    })
+    const results = await $axios
+      .$get('https://www.omdbapi.com/', {
+        params: {
+          apikey: '89fef3ea',
+          s: params.title,
+        },
+      })
+      .catch((error) => {
+        // eslint-disable-next-line no-console
+        console.error(error)
+      })
     return { movies: results }
   },
   data() {
@@ -43,7 +48,11 @@ export default {
   },
   head() {
     return {
-      title: `Movie Finder - ${this.$route.params.title}`,
+      title: `Movie Finder - ${
+        !this.movies.Search || this.movies.Search.length === 0
+          ? "Looks like it didn't find it"
+          : this.$route.params.title
+      }`,
       meta: [
         {
           hid: 'description',
@@ -60,7 +69,7 @@ export default {
     v-if="!movies.Search || movies.Search.length === 0"
     class="flex flex-col"
   >
-    <p class="text-xl lg:text-3xl italic">
+    <p class="text-xl lg:text-3xl italic text-center">
       Sorry, but I have not found any movie with that name
     </p>
   </div>
@@ -90,5 +99,3 @@ export default {
     </div>
   </div>
 </template>
-
-<style scoped></style>

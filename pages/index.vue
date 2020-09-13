@@ -11,9 +11,6 @@ export default {
       ],
     }
   },
+  render: () => null, // Everything needed is in the layout
 }
 </script>
-
-<template>
-  <div></div>
-</template>

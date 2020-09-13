@@ -17,19 +17,8 @@ export default {
   css: [],
   plugins: [{ src: '~/plugins/resize', ssr: false }],
   components: true,
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss',
-  ],
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa',
-    'vue-scrollto/nuxt',
-  ],
-  // Doc: https://axios.nuxtjs.org/options
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', 'vue-scrollto/nuxt'],
   axios: {},
   build: {},
 }

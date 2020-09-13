@@ -13,7 +13,7 @@ export default {
     },
   },
   methods: {
-    handleClick() {
+    handleSearch() {
       this.$router.push({
         path: `/find/${this.movie}`,
       })
@@ -28,12 +28,12 @@ export default {
       v-model="movie"
       class="shadow border border-red-500 rounded w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
       :placeholder="placeholder"
-      @keyup.enter="handleClick"
+      @keyup.enter="handleSearch"
     />
     <button
       class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
       :disabled="movie === ''"
-      @click="handleClick"
+      @click="handleSearch"
     >
       Go!
     </button>

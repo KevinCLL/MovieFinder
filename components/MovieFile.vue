@@ -40,7 +40,7 @@ export default {
 <template>
   <div
     class="flex w-full p-10 bg-gray-200 relative"
-    :class="{ 'flex-col-reverse': screenSize < 737 }"
+    :class="{ 'flex-col-reverse': screenSize < 763 }"
   >
     <div
       class="cursor-pointer h-icon w-icon absolute right-0 top-0 mt-1 text-xl"
@@ -65,7 +65,7 @@ export default {
       </div>
       <div
         v-if="itemExists(movie.imdbID)"
-        class="cursor-pointer bg-yellow-400 mb-4"
+        class="cursor-pointer bg-yellow-400 mb-4 text-center"
       >
         <a :href="`https://www.imdb.com/title/${movie.imdbID}`" target="_blank">
           View IMDB

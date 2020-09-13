@@ -9,7 +9,7 @@ export default {
   mounted() {
     if (this.error.statusCode === 404) {
       const video = this.$refs.videoMeme
-      video.volume = 0.2
+      video.volume = 0.2 // Was too loud
     }
   },
   head() {
@@ -28,17 +28,15 @@ export default {
 </script>
 
 <template>
-  <div class="my-5 mx-auto flex flex-col justify-around max-w-screen-lg">
-    <div class="container">
-      <div v-if="error.statusCode === 404">
-        <video
-          ref="videoMeme"
-          controls
-          src="~/assets/media/404.mp4"
-          class="mb-8"
-        ></video>
-      </div>
-      <div v-else class="mb-8">An error occurred: {{ error }}</div>
+  <div class="my-5 mx-auto">
+    <div v-if="error.statusCode === 404">
+      <video
+        ref="videoMeme"
+        controls
+        src="~/assets/media/404.mp4"
+        class="mb-8"
+      ></video>
     </div>
+    <div v-else class="mb-8">An error occurred: {{ error }}</div>
   </div>
 </template>
