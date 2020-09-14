@@ -1,3 +1,9 @@
+<script>
+export default {
+  name: 'Logo',
+}
+</script>
+
 <template>
   <div class="m-6 mb-12 text-center">
     <h1 class="mb-3">

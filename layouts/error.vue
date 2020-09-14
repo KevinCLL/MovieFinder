@@ -3,7 +3,7 @@ export default {
   props: {
     error: {
       type: Object,
-      default: () => {},
+      required: true,
     },
   },
   mounted() {
@@ -37,6 +37,8 @@ export default {
         class="mb-8"
       ></video>
     </div>
-    <div v-else class="mb-8">An error occurred: {{ error }}</div>
+    <div v-else class="mb-8 p-10 bg-gray-200">
+      An error occurred: {{ error }}
+    </div>
   </div>
 </template>

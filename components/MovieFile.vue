@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: 'MovieFile',
   props: {
     movie: {
       type: Object,
@@ -43,6 +44,7 @@ export default {
     :class="{ 'flex-col-reverse': screenSize < 763 }"
   >
     <div
+      id="movieclose"
       class="cursor-pointer h-icon w-icon absolute right-0 top-0 mt-1 text-xl"
       @click="$emit('close')"
     >
@@ -58,7 +60,7 @@ export default {
       <div v-if="itemExists(movie.Poster)" class="my-0 mx-auto">
         <img :src="movie.Poster" :alt="movie.Title" />
       </div>
-      <div v-if="movie.Ratings.length > 0">
+      <div v-if="movie.Ratings && movie.Ratings.length > 0">
         <div v-for="rating in movie.Ratings" :key="rating.Source">
           {{ rating.Source }} : {{ rating.Value }}
         </div>

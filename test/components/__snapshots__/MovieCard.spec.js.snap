@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieCard renders correctly 1`] = `
+<div
+  class="flex flex-col items-center w-full p-3 h-full"
+>
+  <div
+    class="border bg-white p-2 h-moviecard w-moviecard relative"
+  >
+    <div
+      class="mb-2 flex h-poster"
+    >
+      <img
+        alt="Primer"
+        class="h-100 my-0 mx-auto"
+        src="https://m.media-amazon.com/images/M/MV5BNjc3OWVjMTItYjc0Yi00NmFlLTk2YTgtYmU0MzcxMjBkNTYxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+      />
+    </div>
+     
+    <div
+      class="h-5 text-center"
+    >
+      <h2>
+        <span
+          class="text-2xl"
+        >
+          Primer
+        </span>
+         
+        <span
+          class="italic text-xl"
+        >
+          
+          by Shane Carruth
+        
+        </span>
+      </h2>
+       
+      <h3
+        class="text-xl"
+      >
+        
+        2004
+      
+      </h3>
+    </div>
+     
+    <img
+      alt="magnifying glass"
+      class="movie-card-glass cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
+      src="~/assets/img/magnifying_glass_icon.png"
+    />
+  </div>
+</div>
+`;

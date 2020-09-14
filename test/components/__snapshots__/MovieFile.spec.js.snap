@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieFile renders correctly 1`] = `
+<div
+  class="flex w-full p-10 bg-gray-200 relative"
+>
+  <div
+    class="cursor-pointer h-icon w-icon absolute right-0 top-0 mt-1 text-xl"
+    id="movieclose"
+  >
+    
+    ✖
+  
+  </div>
+   
+  <dl>
+    <dt>
+      Title:
+    </dt>
+     
+    <dd>
+      Primer
+    </dd>
+    <dt>
+      Released:
+    </dt>
+     
+    <dd>
+      27 May 2005
+    </dd>
+    <dt>
+      Director:
+    </dt>
+     
+    <dd>
+      Shane Carruth
+    </dd>
+    <dt>
+      Production:
+    </dt>
+     
+    <dd>
+      ThinkFilm
+    </dd>
+    <dt>
+      Writer:
+    </dt>
+     
+    <dd>
+      Shane Carruth
+    </dd>
+    <dt>
+      Actors:
+    </dt>
+     
+    <dd>
+      Shane Carruth, David Sullivan, Casey Gooden, Anand Upadhyaya
+    </dd>
+    <dt>
+      Country:
+    </dt>
+     
+    <dd>
+      USA
+    </dd>
+    <dt>
+      Language:
+    </dt>
+     
+    <dd>
+      English, French
+    </dd>
+    <dt>
+      Genre:
+    </dt>
+     
+    <dd>
+      Drama, Sci-Fi, Thriller
+    </dd>
+    <dt>
+      Rated:
+    </dt>
+     
+    <dd>
+      PG-13
+    </dd>
+    <dt>
+      Awards:
+    </dt>
+     
+    <dd>
+      3 wins & 7 nominations.
+    </dd>
+    <dt>
+      BoxOffice:
+    </dt>
+     
+    <dd>
+      $392,420
+    </dd>
+    <dt>
+      Plot:
+    </dt>
+     
+    <dd>
+      Engineers Aaron, Abe, Robert and Phillip are working on an invention, the prototype being built in Aaron's garage. This project is beyond their day jobs. The project truly does belong to Aaron and Abe, as they use all their free time working on it, primarily trying to overcome the many engineering related problems they've encountered. It is during one of his tests with the invention running that Abe discovers that a protein inside the main unit has multiplied much more rapidly than it could in nature. Rather than the invention being a protein super incubator, Abe, using himself as a guinea pig, and a very meticulous one at that, discovers that the invention can be used as a time machine. In his self experiment, Abe was especially careful not to interfere with his own self in that time warp. Abe passes along this discovery to Aaron, who he expects will tell his wife Kara in what is the sanctity of their marriage, but he doesn't want to tell either Robert or Phillip. Much to Abe's surprise, Aaron does not want to tell Kara, it being a sole intellectual property of just the two of them, in the process moving the base of operation to a locked storage unit. Aaron's plan for the two of them is to use the invention to win big in the stock market by knowing through the time travel what has happened in the market. With two thoughts on the matter now instead of just one, Aaron and Abe may hit some logistical and philosophical roadblocks in how to move forward.
+    </dd>
+  </dl>
+   
+  <div
+    class="flex flex-col min-w-1/4"
+  >
+    <div
+      class="my-0 mx-auto"
+    >
+      <img
+        alt="Primer"
+        src="https://m.media-amazon.com/images/M/MV5BNjc3OWVjMTItYjc0Yi00NmFlLTk2YTgtYmU0MzcxMjBkNTYxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+      />
+    </div>
+     
+    <div>
+      <div>
+        
+        Internet Movie Database : 6.9/10
+      
+      </div>
+      <div>
+        
+        Rotten Tomatoes : 73%
+      
+      </div>
+      <div>
+        
+        Metacritic : 68/100
+      
+      </div>
+    </div>
+     
+    <div
+      class="cursor-pointer bg-yellow-400 mb-4 text-center"
+    >
+      <a
+        href="https://www.imdb.com/title/tt0390384"
+        target="_blank"
+      >
+        
+        View IMDB
+      
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo renders correctly 1`] = `
+<div
+  class="m-6 mb-12 text-center"
+>
+  <h1
+    class="mb-3"
+  >
+    <a>
+      <img
+        alt="MovieFinder"
+        class="logo"
+        src="~/assets/img/logo.png"
+      />
+    </a>
+  </h1>
+   
+  <h2
+    class="text-xl lg:text-3xl italic"
+  >
+    
+    Not 
+    <span
+      class="text-red-700"
+    >
+      the best movie finder
+    </span>
+    , but maybe
+    it's good enough.
+  
+  </h2>
+</div>
+`;

@@ -2,7 +2,10 @@
 import { Carousel, Slide } from 'vue-carousel'
 
 export default {
+  name: 'Find',
   components: { Carousel, Slide },
+  // We will test asyncData on e2e because didn't has test-util
+  /* istanbul ignore next */
   async asyncData({ $axios, params }) {
     const results = await $axios
       .$get('https://www.omdbapi.com/', {
@@ -13,7 +16,7 @@ export default {
       })
       .catch((error) => {
         // eslint-disable-next-line no-console
-        console.error(error)
+        console.warn(error)
       })
     return { movies: results }
   },
@@ -69,7 +72,7 @@ export default {
     v-if="!movies.Search || movies.Search.length === 0"
     class="flex flex-col"
   >
-    <p class="text-xl lg:text-3xl italic text-center">
+    <p id="sorry" class="text-xl lg:text-3xl italic text-center">
       Sorry, but I have not found any movie with that name
     </p>
   </div>

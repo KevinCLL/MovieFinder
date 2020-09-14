@@ -1,9 +1,10 @@
 <script>
 export default {
+  name: 'MovieCard',
   props: {
     movie: {
       type: Object,
-      default: () => {},
+      required: true,
     },
   },
   data() {
@@ -27,7 +28,7 @@ export default {
         .then((expandedMovie) => (this.expandedMovie = expandedMovie))
         .catch((error) => {
           // eslint-disable-next-line no-console
-          console.error(error)
+          console.warn(error)
         })
     },
   },
@@ -48,7 +49,9 @@ export default {
         v-else
         class="mb-2 flex items-center h-poster bg-gradient-to-tr from-blue-700 to-blue-900 flex"
       >
-        <p class="text-3xl text-white my-0 mx-auto">Poster not found</p>
+        <p class="no-poster text-3xl text-white my-0 mx-auto">
+          Poster not found
+        </p>
       </div>
       <div class="h-5 text-center">
         <h2>
@@ -65,7 +68,7 @@ export default {
         </h3>
       </div>
       <img
-        class="cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
+        class="movie-card-glass cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
         src="~/assets/img/magnifying_glass_icon.png"
         alt="magnifying glass"
         @click="$emit('movie-select', expandedMovie)"

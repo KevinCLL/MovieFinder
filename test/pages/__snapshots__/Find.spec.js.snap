@@ -1,0 +1,685 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Find renders correctly 1`] = `
+<div
+  class="flex flex-col"
+>
+  <div
+    class="VueCarousel"
+  >
+    <div
+      class="VueCarousel-wrapper"
+    >
+      <div
+        class="VueCarousel-inner"
+        style="transform: translate(0px, 0); transition: 0.5s ease transform; flex-basis: 0px; visibility: hidden; height: auto;"
+      >
+        <div
+          class="VueCarousel-slide VueCarousel-slide-active"
+          role="tabpanel"
+          tabindex="-1"
+        >
+          <div
+            class="flex flex-col items-center w-full p-3 h-full"
+          >
+            <div
+              class="border bg-white p-2 h-moviecard w-moviecard relative"
+            >
+              <div
+                class="mb-2 flex h-poster"
+              >
+                <img
+                  alt="Primer"
+                  class="h-100 my-0 mx-auto"
+                  src="https://m.media-amazon.com/images/M/MV5BNjc3OWVjMTItYjc0Yi00NmFlLTk2YTgtYmU0MzcxMjBkNTYxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+                />
+              </div>
+               
+              <div
+                class="h-5 text-center"
+              >
+                <h2>
+                  <span
+                    class="text-2xl"
+                  >
+                    Primer
+                  </span>
+                   
+                  <span
+                    class="italic text-xl"
+                  >
+                    
+          by Shane Carruth
+        
+                  </span>
+                </h2>
+                 
+                <h3
+                  class="text-xl"
+                >
+                  
+        2004
+      
+                </h3>
+              </div>
+               
+              <img
+                alt="magnifying glass"
+                class="movie-card-glass cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
+                src="~/assets/img/magnifying_glass_icon.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="VueCarousel-slide VueCarousel-slide-active VueCarousel-slide-center"
+          role="tabpanel"
+          tabindex="-1"
+        >
+          <div
+            class="flex flex-col items-center w-full p-3 h-full"
+          >
+            <div
+              class="border bg-white p-2 h-moviecard w-moviecard relative"
+            >
+              <div
+                class="mb-2 flex h-poster"
+              >
+                <img
+                  alt="Next: A Primer on Urban Painting"
+                  class="h-100 my-0 mx-auto"
+                  src="https://m.media-amazon.com/images/M/MV5BODk5MDQ1MDI4Ml5BMl5BanBnXkFtZTgwNzI4MDA2MDE@._V1_SX300.jpg"
+                />
+              </div>
+               
+              <div
+                class="h-5 text-center"
+              >
+                <h2>
+                  <span
+                    class="text-2xl"
+                  >
+                    Next: A Primer on Urban Painting
+                  </span>
+                   
+                  <span
+                    class="italic text-xl"
+                  >
+                    
+          by Shane Carruth
+        
+                  </span>
+                </h2>
+                 
+                <h3
+                  class="text-xl"
+                >
+                  
+        2005
+      
+                </h3>
+              </div>
+               
+              <img
+                alt="magnifying glass"
+                class="movie-card-glass cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
+                src="~/assets/img/magnifying_glass_icon.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="VueCarousel-slide VueCarousel-slide-active"
+          role="tabpanel"
+          tabindex="-1"
+        >
+          <div
+            class="flex flex-col items-center w-full p-3 h-full"
+          >
+            <div
+              class="border bg-white p-2 h-moviecard w-moviecard relative"
+            >
+              <div
+                class="mb-2 flex h-poster"
+              >
+                <img
+                  alt="Primer Festival de Mortadelo y Filemón, agencia de información"
+                  class="h-100 my-0 mx-auto"
+                  src="https://m.media-amazon.com/images/M/MV5BMDk5N2Q0MjAtYjI4ZC00YjdlLWJmYjgtMDNjYzdiZTU1OTA1XkEyXkFqcGdeQXVyODI2MDA4NQ@@._V1_SX300.jpg"
+                />
+              </div>
+               
+              <div
+                class="h-5 text-center"
+              >
+                <h2>
+                  <span
+                    class="text-2xl"
+                  >
+                    Primer Festival de Mortadelo y Filemón, agencia de información
+                  </span>
+                   
+                  <span
+                    class="italic text-xl"
+                  >
+                    
+          by Shane Carruth
+        
+                  </span>
+                </h2>
+                 
+                <h3
+                  class="text-xl"
+                >
+                  
+        1969
+      
+                </h3>
+              </div>
+               
+              <img
+                alt="magnifying glass"
+                class="movie-card-glass cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
+                src="~/assets/img/magnifying_glass_icon.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          class="VueCarousel-slide"
+          role="tabpanel"
+          tabindex="-1"
+        >
+          <div
+            class="flex flex-col items-center w-full p-3 h-full"
+          >
+            <div
+              class="border bg-white p-2 h-moviecard w-moviecard relative"
+            >
+              <div
+                class="mb-2 flex h-poster"
+              >
+                <img
+                  alt="Más sabe el diablo: El primer golpe"
+                  class="h-100 my-0 mx-auto"
+                  src="https://m.media-amazon.com/images/M/MV5BOGZlNzRmM2YtZjAwNy00NDYyLTlkMWQtYmY4ZTMyZWM2MDlmXkEyXkFqcGdeQXVyMjQ2MDQwNDU@._V1_SX300.jpg"
+                />
+              </div>
+               
+              <div
+                class="h-5 text-center"
+              >
+                <h2>
+                  <span
+                    class="text-2xl"
+                  >
+                    Más sabe el diablo: El primer golpe
+                  </span>
+                   
+                  <span
+                    class="italic text-xl"
+                  >
+                    
+          by Shane Carruth
+        
+                  </span>
+                </h2>
+                 
+                <h3
+                  class="text-xl"
+                >
+                  
+        2010
+      
+                </h3>
+              </div>
+               
+              <img
+                alt="magnifying glass"
+                class="movie-card-glass cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
+                src="~/assets/img/magnifying_glass_icon.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          class="VueCarousel-slide"
+          role="tabpanel"
+          tabindex="-1"
+        >
+          <div
+            class="flex flex-col items-center w-full p-3 h-full"
+          >
+            <div
+              class="border bg-white p-2 h-moviecard w-moviecard relative"
+            >
+              <div
+                class="mb-2 flex items-center h-poster bg-gradient-to-tr from-blue-700 to-blue-900 flex"
+              >
+                <p
+                  class="no-poster text-3xl text-white my-0 mx-auto"
+                >
+                  
+        Poster not found
+      
+                </p>
+              </div>
+               
+              <div
+                class="h-5 text-center"
+              >
+                <h2>
+                  <span
+                    class="text-2xl"
+                  >
+                    Primer Feliks Langus ali Kako ujeti svobodo
+                  </span>
+                   
+                  <span
+                    class="italic text-xl"
+                  >
+                    
+          by Shane Carruth
+        
+                  </span>
+                </h2>
+                 
+                <h3
+                  class="text-xl"
+                >
+                  
+        1991
+      
+                </h3>
+              </div>
+               
+              <img
+                alt="magnifying glass"
+                class="movie-card-glass cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
+                src="~/assets/img/magnifying_glass_icon.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          class="VueCarousel-slide"
+          role="tabpanel"
+          tabindex="-1"
+        >
+          <div
+            class="flex flex-col items-center w-full p-3 h-full"
+          >
+            <div
+              class="border bg-white p-2 h-moviecard w-moviecard relative"
+            >
+              <div
+                class="mb-2 flex items-center h-poster bg-gradient-to-tr from-blue-700 to-blue-900 flex"
+              >
+                <p
+                  class="no-poster text-3xl text-white my-0 mx-auto"
+                >
+                  
+        Poster not found
+      
+                </p>
+              </div>
+               
+              <div
+                class="h-5 text-center"
+              >
+                <h2>
+                  <span
+                    class="text-2xl"
+                  >
+                    Primer amor... tres años después
+                  </span>
+                   
+                  <span
+                    class="italic text-xl"
+                  >
+                    
+          by Shane Carruth
+        
+                  </span>
+                </h2>
+                 
+                <h3
+                  class="text-xl"
+                >
+                  
+        2001
+      
+                </h3>
+              </div>
+               
+              <img
+                alt="magnifying glass"
+                class="movie-card-glass cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
+                src="~/assets/img/magnifying_glass_icon.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          class="VueCarousel-slide"
+          role="tabpanel"
+          tabindex="-1"
+        >
+          <div
+            class="flex flex-col items-center w-full p-3 h-full"
+          >
+            <div
+              class="border bg-white p-2 h-moviecard w-moviecard relative"
+            >
+              <div
+                class="mb-2 flex h-poster"
+              >
+                <img
+                  alt="El primer cuartel"
+                  class="h-100 my-0 mx-auto"
+                  src="https://m.media-amazon.com/images/M/MV5BZDVhNWM5ZDItMzkyYi00ZGQ5LWEyNGMtYTg2ZmVlOTYyNjg2L2ltYWdlXkEyXkFqcGdeQXVyNTUyMTMyMDg@._V1_SX300.jpg"
+                />
+              </div>
+               
+              <div
+                class="h-5 text-center"
+              >
+                <h2>
+                  <span
+                    class="text-2xl"
+                  >
+                    El primer cuartel
+                  </span>
+                   
+                  <span
+                    class="italic text-xl"
+                  >
+                    
+          by Shane Carruth
+        
+                  </span>
+                </h2>
+                 
+                <h3
+                  class="text-xl"
+                >
+                  
+        1966
+      
+                </h3>
+              </div>
+               
+              <img
+                alt="magnifying glass"
+                class="movie-card-glass cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
+                src="~/assets/img/magnifying_glass_icon.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          class="VueCarousel-slide"
+          role="tabpanel"
+          tabindex="-1"
+        >
+          <div
+            class="flex flex-col items-center w-full p-3 h-full"
+          >
+            <div
+              class="border bg-white p-2 h-moviecard w-moviecard relative"
+            >
+              <div
+                class="mb-2 flex items-center h-poster bg-gradient-to-tr from-blue-700 to-blue-900 flex"
+              >
+                <p
+                  class="no-poster text-3xl text-white my-0 mx-auto"
+                >
+                  
+        Poster not found
+      
+                </p>
+              </div>
+               
+              <div
+                class="h-5 text-center"
+              >
+                <h2>
+                  <span
+                    class="text-2xl"
+                  >
+                    Primer plano
+                  </span>
+                   
+                  <span
+                    class="italic text-xl"
+                  >
+                    
+          by Shane Carruth
+        
+                  </span>
+                </h2>
+                 
+                <h3
+                  class="text-xl"
+                >
+                  
+        2001–
+      
+                </h3>
+              </div>
+               
+              <img
+                alt="magnifying glass"
+                class="movie-card-glass cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
+                src="~/assets/img/magnifying_glass_icon.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          class="VueCarousel-slide"
+          role="tabpanel"
+          tabindex="-1"
+        >
+          <div
+            class="flex flex-col items-center w-full p-3 h-full"
+          >
+            <div
+              class="border bg-white p-2 h-moviecard w-moviecard relative"
+            >
+              <div
+                class="mb-2 flex h-poster"
+              >
+                <img
+                  alt="The Pimp Primer"
+                  class="h-100 my-0 mx-auto"
+                  src="https://m.media-amazon.com/images/M/MV5BNTRmOTJkOTItNTI1ZC00ZTk0LTg1MmQtZGYzZTM3NDE4NGY1XkEyXkFqcGdeQXVyNjg5Nzc3NTU@._V1_SX300.jpg"
+                />
+              </div>
+               
+              <div
+                class="h-5 text-center"
+              >
+                <h2>
+                  <span
+                    class="text-2xl"
+                  >
+                    The Pimp Primer
+                  </span>
+                   
+                  <span
+                    class="italic text-xl"
+                  >
+                    
+          by Shane Carruth
+        
+                  </span>
+                </h2>
+                 
+                <h3
+                  class="text-xl"
+                >
+                  
+        1970
+      
+                </h3>
+              </div>
+               
+              <img
+                alt="magnifying glass"
+                class="movie-card-glass cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
+                src="~/assets/img/magnifying_glass_icon.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden="true"
+          class="VueCarousel-slide"
+          role="tabpanel"
+          tabindex="-1"
+        >
+          <div
+            class="flex flex-col items-center w-full p-3 h-full"
+          >
+            <div
+              class="border bg-white p-2 h-moviecard w-moviecard relative"
+            >
+              <div
+                class="mb-2 flex items-center h-poster bg-gradient-to-tr from-blue-700 to-blue-900 flex"
+              >
+                <p
+                  class="no-poster text-3xl text-white my-0 mx-auto"
+                >
+                  
+        Poster not found
+      
+                </p>
+              </div>
+               
+              <div
+                class="h-5 text-center"
+              >
+                <h2>
+                  <span
+                    class="text-2xl"
+                  >
+                    A Communications Primer
+                  </span>
+                   
+                  <span
+                    class="italic text-xl"
+                  >
+                    
+          by Shane Carruth
+        
+                  </span>
+                </h2>
+                 
+                <h3
+                  class="text-xl"
+                >
+                  
+        1953
+      
+                </h3>
+              </div>
+               
+              <img
+                alt="magnifying glass"
+                class="movie-card-glass cursor-pointer h-icon w-icon absolute right-0 bottom-0 m-3"
+                src="~/assets/img/magnifying_glass_icon.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <!---->
+     
+    <div
+      class="VueCarousel-pagination"
+      data-v-438fd353=""
+      style=""
+    >
+      <div
+        class="VueCarousel-dot-container"
+        data-v-438fd353=""
+        role="tablist"
+        style="margin-top: 20px;"
+      >
+        <button
+          aria-hidden="false"
+          aria-label="Item 0"
+          aria-selected="true"
+          class="VueCarousel-dot VueCarousel-dot--active"
+          data-v-438fd353=""
+          role="tab"
+          style="margin-top: 20px; padding: 10px; width: 10px; height: 10px; background-color: rgb(0, 0, 0);"
+          title="Item 0"
+          value="Item 0"
+        />
+        <button
+          aria-hidden="false"
+          aria-label="Item 1"
+          aria-selected="false"
+          class="VueCarousel-dot"
+          data-v-438fd353=""
+          role="tab"
+          style="margin-top: 20px; padding: 10px; width: 10px; height: 10px; background-color: rgb(239, 239, 239);"
+          title="Item 1"
+          value="Item 1"
+        />
+        <button
+          aria-hidden="false"
+          aria-label="Item 2"
+          aria-selected="false"
+          class="VueCarousel-dot"
+          data-v-438fd353=""
+          role="tab"
+          style="margin-top: 20px; padding: 10px; width: 10px; height: 10px; background-color: rgb(239, 239, 239);"
+          title="Item 2"
+          value="Item 2"
+        />
+        <button
+          aria-hidden="false"
+          aria-label="Item 3"
+          aria-selected="false"
+          class="VueCarousel-dot"
+          data-v-438fd353=""
+          role="tab"
+          style="margin-top: 20px; padding: 10px; width: 10px; height: 10px; background-color: rgb(239, 239, 239);"
+          title="Item 3"
+          value="Item 3"
+        />
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="my-10"
+    id="expanded"
+  >
+    <!---->
+  </div>
+   
+  <div
+    class="text-center w-full"
+  >
+    <div
+      class="inline cursor-pointer h-icon w-icon text-3xl text-white"
+    >
+      
+      ↑
+    
+    </div>
+  </div>
+</div>
+`;

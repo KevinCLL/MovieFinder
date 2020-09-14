@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Searchbox renders correctly 1`] = `
+<div
+  class="w-full mb-6 text-center"
+>
+  <input
+    class="shadow border border-red-500 rounded w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    id="searchbox"
+    placeholder="Find me a movie"
+  />
+   
+  <button
+    class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+    id="searchbutton"
+  >
+    
+    Go!
+  
+  </button>
+</div>
+`;

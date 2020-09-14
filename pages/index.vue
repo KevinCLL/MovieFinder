@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: 'Home',
   head() {
     return {
       title: 'Movie Finder - I hope it finds it',
@@ -11,6 +12,6 @@ export default {
       ],
     }
   },
-  render: () => null, // Everything needed is in the layout
+  render: () => null, // Everything needed is in the
 }
 </script>
